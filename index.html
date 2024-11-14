@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    HEAD OR TAILS
+  </title>
+</head>
+<style>
+  body{
+    
+   
+  
+  }
+  .h{
+padding-left:30px ;
+padding-right: 30px;
+padding-top: 15px;
+padding-bottom: 15px;
+border-style: solid;
+border-color: rgb(5, 255, 72);
+background-color:black;
+color:rgb(255, 255, 255);
+
+  }
+  .t{
+  padding-left:30px ;
+padding-right: 30px;
+padding-top: 15px;
+padding-bottom: 15px;
+border-style:solid;
+border-color:black;
+background-color: white;
+color:black;
+  }
+  .div{
+
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+    text-align: center;
+  }
+</style>
+<body>
+  <div class="div">
+  <button class="h" onclick="heading()">HEAD</button>
+  <button class="t" onclick="
+  if(total %2 == 0){
+    alert('YOU LOSS THE TOSSS...');
+  }
+  else {
+    alert('YOU WON THE TOSSS...');
+  }
+  ">
+  TAIL
+  </button>
+</div>
+  <script>
+  var total=parseInt((Math.round(Math.random() * 2000)));
+const heading = () => {
+  if(total % 2 == 0){
+    alert("YOU WON THE TOSSS...");
+  }
+  else {
+    alert("YOU LOSS THE TOSSS......")
+  }
+}
+const tailing = ()=>{
+  if(total % 2 == 0){
+    alert("YOU LOSS THE TOSSS...");
+  }
+  else {
+    alert("YOU WON THE TOSSS......")
+  }
+}
+</script>
+ </body>
+</html>
